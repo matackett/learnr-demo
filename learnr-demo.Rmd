@@ -25,6 +25,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ggplot2::theme_set(theme_bw())
 ```
 
+## Part 0: Introduction 
+
+Add description of the tutorial and the Ikea data set. 
+
 ## Part 1: Writing questions
 
 ### Multiple choice
@@ -41,7 +45,7 @@ ggplot(aes(x = category, y = price_usd, fill = category)) +
        y = "Price (in $)")
 ```
 
-```{r mc-variability}
+```{r variability}
 question("Which category of furniture has the least variability in the price?", 
          answer("Beds"), 
          answer("Sofas & armchairs"), 
@@ -52,7 +56,7 @@ question("Which category of furniture has the least variability in the price?",
 
 You can also add options to the questions to allow retries, random order, and hints for incorrect responses.
 
-```{r mc-variability-hint}
+```{r variability-hint}
 question("Which category of furniture has the least variability in the price?", 
          answer("Beds"), 
          answer("Sofas & armchairs"), 
@@ -152,9 +156,11 @@ ikea |>
 
 ```{r filter2-check}
 grade_this({
-  if (identical(.result, ikea |> filter(price_usd > 300) |> nrow())) {
-    pass("Great work! You found the number of furniture items greater that cost more than $300!")
-  } 
+  pass_if_equal(
+    ikea |> filter(price_usd > 300) |> nrow(), 
+  message = "Great work! You found the number of furniture items greater that cost more than $300!")
+  fail_if_equal(nrow(ikea), 
+                message = "You found the number of observations in the data, but did you forget to filter for those that cost more than $300?")
   fail("Not quite but keep trying!")
 })
 ```
@@ -182,13 +188,29 @@ question_rank(
 )
 ```
 
-## Part 4: Building questions
+## Part 4: Writing effective exercises
 
-## Part 5: Write your own questions
+
+
+## Part 5: Your turn! 
+
+Create a tutorial with three questions: 
+
+- one multiple choice 
+- one coding exercise
+- one sortable question. 
+
+It is OK if each question requires code, but that is not required.
+
+**Stretch goal:** Add hints and code checking to the coding exercise.
+
+You can write your questions in this section of the .Rmd file. 
+
 
 ## Part 6: Minute paper
 
 ```{=html}
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsV-_m3unjj1S-NSsMjBir-yxrObaLbdS3ypzTe1tPoYv8gQ/viewform?embedded=true" width="640" height="372" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsV-_m3unjj1S-NSsMjBir-yxrObaLbdS3ypzTe1tPoYv8gQ/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 ```
+
 ## Part 7: Submit response
