@@ -1,10 +1,10 @@
 ---
-title: "Learnr Tutorial Demo"
+title: "Learnr Demo"
 output: 
   learnr::tutorial:
-    fig_caption: no
     progressive: true
     allow_skip: true
+    css: "css/style.css"
 runtime: shiny_prerendered
 ---
 
@@ -25,9 +25,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ggplot2::theme_set(theme_bw())
 ```
 
-## Part 0: Introduction 
+## Introduction 
 
-Add description of the tutorial and the Ikea data set. 
+- Add description of the tutorial and the Ikea data set. 
 
 ## Part 1: Writing questions
 
@@ -194,6 +194,7 @@ question_rank(
 
 ## Part 5: Your turn! 
 
+::: {.your-turn}
 Create a tutorial with three questions: 
 
 - one multiple choice 
@@ -202,10 +203,10 @@ Create a tutorial with three questions:
 
 It is OK if each question requires code, but that is not required.
 
-**Stretch goal:** Add hints and code checking to the coding exercise.
+<b>Stretch goal:</b> Add hints and code checking to the coding exercise.
 
 You can write your questions in this section of the .Rmd file. 
-
+::: 
 
 ## Part 6: Minute paper
 
@@ -213,4 +214,4 @@ You can write your questions in this section of the .Rmd file.
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsV-_m3unjj1S-NSsMjBir-yxrObaLbdS3ypzTe1tPoYv8gQ/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 ```
 
-## Part 7: Submit response
+## Learn more! 

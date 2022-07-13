@@ -14,7 +14,7 @@
 <meta name="allow-skip" content="true" />
 <meta name="learnr-version-prerender" content="0.10.5.9000" />
 
-<title>Learnr Tutorial Demo</title>
+<title>Learnr Demo</title>
 
 <!-- header-includes START -->
 <!-- HEAD_CONTENT -->
@@ -96,6 +96,7 @@ if (window.hljs) {
 </style>
 <!-- end tabsets -->
 
+<link rel="stylesheet" href="css/style.css" type="text/css" />
 
 </head>
 
@@ -109,9 +110,11 @@ if (window.hljs) {
 
 <article class="topics" id="learnr-tutorial-content">
 
-<div id="section-part-0-introduction" class="section level2">
-<h2>Part 0: Introduction</h2>
-<p>Add description of the tutorial and the Ikea data set.</p>
+<div id="section-introduction" class="section level2">
+<h2>Introduction</h2>
+<ul>
+<li>Add description of the tutorial and the Ikea data set.</li>
+</ul>
 </div>
 <div id="section-part-1-writing-questions" class="section level2">
 <h2>Part 1: Writing questions</h2>
@@ -248,11 +251,13 @@ data-lines="0">
 </div>
 </div>
 </div>
-<div id="section-part-4-building-questions" class="section level2">
-<h2>Part 4: Building questions</h2>
+<div id="section-part-4-writing-effective-exercises"
+class="section level2">
+<h2>Part 4: Writing effective exercises</h2>
 </div>
 <div id="section-part-5-your-turn" class="section level2">
 <h2>Part 5: Your turn!</h2>
+<div class="your-turn">
 <p>Create a tutorial with three questions:</p>
 <ul>
 <li>one multiple choice</li>
@@ -261,16 +266,17 @@ data-lines="0">
 </ul>
 <p>It is OK if each question requires code, but that is not
 required.</p>
-<p><strong>Stretch goal:</strong> Add hints and code checking to the
-coding exercise.</p>
+<p><b>Stretch goal:</b> Add hints and code checking to the coding
+exercise.</p>
 <p>You can write your questions in this section of the .Rmd file.</p>
+</div>
 </div>
 <div id="section-part-6-minute-paper" class="section level2">
 <h2>Part 6: Minute paper</h2>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsV-_m3unjj1S-NSsMjBir-yxrObaLbdS3ypzTe1tPoYv8gQ/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
-<div id="section-part-7-submit-response" class="section level2">
-<h2>Part 7: Submit response</h2>
+<div id="section-learn-more" class="section level2">
+<h2>Learn more!</h2>
 <p>
 <script type="application/shiny-prerendered" data-context="server-start">
 # load packages
@@ -312,17 +318,17 @@ session$onSessionEnded(function() {
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "variability", 
     question = structure("Which category of furniture has the least variability in the price?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_a48a493", 
+    "character")), answers = list(structure(list(id = "lnr_ans_58d8e07", 
         option = "Beds", value = "Beds", label = structure("Beds", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c7d88dd", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_d02b896", 
         option = "Sofas & armchairs", value = "Sofas & armchairs", 
         label = structure("Sofas &amp; armchairs", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_d50b466", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_d07d694", 
         option = "Tables & desk", value = "Tables & desk", label = structure("Tables &amp; desk", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_bbf3315", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_3e6e571", 
         option = "The variability is the same for all three categories", 
         value = "The variability is the same for all three categories", 
         label = structure("The variability is the same for all three categories", html = TRUE, class = c("html", 
@@ -335,7 +341,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "variability-answer", question = "variability"), 
     loading = NULL, random_answer_order = FALSE, allow_retry = FALSE, 
-    seed = 592790981.72396, options = list()), class = c("learnr_radio", 
+    seed = 632581616.205431, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
 
@@ -343,17 +349,17 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "variability-hint", 
     question = structure("Which category of furniture has the least variability in the price?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_81b082", 
+    "character")), answers = list(structure(list(id = "lnr_ans_e0929a0", 
         option = "Beds", value = "Beds", label = structure("Beds", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_4852fb1", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_cc0470e", 
         option = "Sofas & armchairs", value = "Sofas & armchairs", 
         label = structure("Sofas &amp; armchairs", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c7162f2", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_2033429", 
         option = "Tables & desk", value = "Tables & desk", label = structure("Tables &amp; desk", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_32683ce", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_3e2545f", 
         option = "The variability is the same for all three categories", 
         value = "The variability is the same for all three categories", 
         label = structure("The variability is the same for all three categories", html = TRUE, class = c("html", 
@@ -366,7 +372,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "variability-hint-answer", question = "variability-hint"), 
     loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 888244234.086379, options = list()), class = c("learnr_radio", 
+    seed = 1079425972.49735, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -597,13 +603,13 @@ learnr:::store_exercise_cache(structure(list(label = "filter2", global_setup = s
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "sortable_rank", label = "sorting-exercise", 
     question = structure("Sort the steps to bake and serve a cake in the correct order.", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_640ae67", 
+    "character")), answers = list(structure(list(id = "lnr_ans_424a2ea", 
         option = c("Mix the ingredients.", "Bake the cake.", 
         "Decorate the cake.", "Slice the cake."), value = c("Mix the ingredients.", 
         "Bake the cake.", "Decorate the cake.", "Slice the cake."
         ), label = structure("Mix the ingredients.\nBake the cake.\nDecorate the cake.\nSlice the cake.", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_cff5a14", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_89e1c3b", 
         option = c("Slice the cake.", "Decorate the cake.", "Bake the cake.", 
         "Mix the ingredients."), value = c("Slice the cake.", 
         "Decorate the cake.", "Bake the cake.", "Mix the ingredients."
@@ -619,7 +625,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "sortable_rank", label
         answer = "sorting-exercise-answer", question = "sorting-exercise"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nSort the steps to bake and serve a cake in the correct order.\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 1133998420.47194, options = structure(list(), class = "sortable_options")), class = c("sortable_rank", 
+    seed = 1627537847.74212, options = structure(list(), class = "sortable_options")), class = c("sortable_rank", 
 "tutorial_question")), session = session)
 </script>
 </p>
@@ -644,8 +650,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "sortable_rank", label
 
 <!-- begin doc-metadata -->
 <div id="doc-metadata">
-<h1 class="title toc-ignore" style="display:none;">Learnr Tutorial
-Demo</h1>
+<h1 class="title toc-ignore" style="display:none;">Learnr Demo</h1>
 </div>
 <!-- end doc-metadata -->
 
