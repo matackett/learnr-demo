@@ -35,20 +35,20 @@ h3 {
 }
 
 .btn-primary {
-  background-color: #D3533A !important;
+  background-color: #da6f5a !important;
   color: white !important;
   font-family: Secular One !important;
   font-size: 16px !important;
 }
 
 .btn, .btn-success, .btn-xs, .btn-tutorial-run, .pull-right {
-  background-color: #D3533A !important;
+  background-color: #da6f5a !important;
   color: white !important;
   font-family: Secular One !important;
 }
 
 .btn-default {
-  background-color: #D3533A !important;
+  background-color: #da6f5a !important;
   color: white !important;
   font-family: Secular One !important;
   font-size: 16px !important;
@@ -56,7 +56,7 @@ h3 {
 
 .topicsList .topic.current {
   border-color: white !important;
-  background-color: #7090A5 !important;
+  background-color: white !important;
   color: white !important;
 }
 
@@ -79,5 +79,6 @@ img {
   border-right: 2pt solid #D3533A;
   border-top: 2pt solid #D3533A;
   border-bottom: 2pt solid #D3533A;
+  background-color: #f1cac2;
 
 }
