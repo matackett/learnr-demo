@@ -30,7 +30,36 @@ ggplot2::theme_set(theme_bw())
 
 ## Introduction
 
-Introduction
+*This is a demo tutorial for the [Designing the Data Science Classroom](https://rstudio-conf-2022.github.io/teach-ds/) workshop at rstudio::conf 2022.*
+
+### Packages
+
+This tutorial uses the **tidyverse** package. Run the code below to load the package.
+
+```{r load-package, exercise = TRUE}
+library(tidyverse)
+```
+
+### Data: Ikea furniture
+
+The data in this tutorial are all about [Ikea](https://www.ikea.com/) furniture. The data were obtained from the [TidyTuesday](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-11-03/readme.md) data collection.
+
+Run the code below to load the data from a .csv file.
+
+```{r load-data, exercise = TRUE}
+ikea <- read_csv("data/ikea.csv")
+```
+
+We will primarily use the following variables in the analysis:
+
+-   `category`: The furniture category that the item belongs to (Sofas, beds, chairs, Trolleys,...)
+-   `price_usd`: Price in US dollars based on the price on the Ikea website on 4/20/2020.
+
+Run the code to see the names of all variables in the data set, and [click here](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-11-03/readme.md) to see the full data dictionary.
+
+```{r colnames, exercise = TRUE}
+names(ikea)
+```
 
 ## Part 1: Question types
 
@@ -45,7 +74,7 @@ ggplot(aes(x = category, y = price_usd, fill = category)) +
   geom_boxplot() + 
   guides(fill = "none") +
   labs(x = "Furniture category", 
-       y = "Price (in $)")
+       y = "Price (in $)") 
 ```
 
 ```{r variability}
@@ -207,13 +236,7 @@ grade_this({
 })
 ```
 
-## Part 4: Writing effective exercises
-
-Add tips and example set of coding/ MC and fill in the blank exercises.
-
-[MAKE THIS WORK!]
-
-## Part 5: Your turn! 
+## Part 4: Your turn! 
 
 ::: your-turn
 Add automated feedback to your coding exercise.
@@ -223,14 +246,14 @@ Add automated feedback to your coding exercise.
 You can write your responses in this section or modify the code in Part 2.
 :::
 
-## Part 6: Minute paper
+## Part 5: Minute paper
 
 Provide a "minute paper" in an embedded online form for students to reflect on their understanding of the material in the tutorial.
 
 ```{=html}
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsV-_m3unjj1S-NSsMjBir-yxrObaLbdS3ypzTe1tPoYv8gQ/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 ```
-## Part 7: Recording responses with learnrhash
+## Part 6: Recording responses with learnrhash
 
 The [**learnrhash**](https://github.com/rundel/learnrhash) package makes it feasible to collect student responses to learnr tutorials. Students submit their responses using a "hash" submitted to an online form.
 
