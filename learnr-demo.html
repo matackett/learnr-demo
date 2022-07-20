@@ -282,9 +282,9 @@ exercise.</p>
 <h2>Part 3: Automated feedback</h2>
 <p>So far students would have to check their solutions to coding
 exercises by assessing whether the output is reasonable or comparing
-their code to the solution. The <a
+their code to the solution. You can use the <a
 href="https://pkgs.rstudio.com/gradethis/articles/gradethis.html"><strong>gradethis</strong></a>
-package has functions for automated feedback on code.</p>
+package to provide automated feedback on code.</p>
 <div id="section-checking-code" class="section level3">
 <h3>Checking code</h3>
 <p>Count the number of items in the data set that cost more than
@@ -338,11 +338,10 @@ reflect on their understanding of the material in the tutorial.</p>
 <div id="section-part-6-recording-responses-with-learnrhash"
 class="section level2">
 <h2>Part 6: Recording responses with learnrhash</h2>
-<p>The <a
+<p>Use the <a
 href="https://github.com/rundel/learnrhash"><strong>learnrhash</strong></a>
-package makes it feasible to collect student responses to learnr
-tutorials. Students submit their responses using a “hash” submitted to
-an online form.</p>
+package to collect student responses from learnr tutorials. Students
+submit their responses using a “hash” submitted to an online form.</p>
 <p>Create a histogram of the distribution of Ikea furniture prices and
 answer the following questions based on the histogram.</p>
 <div class="tutorial-exercise" data-label="price-histogram"
@@ -704,17 +703,17 @@ learnr:::store_exercise_cache(structure(list(label = "colnames", global_setup = 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "variability", 
     question = structure("Which category of furniture has the least variability in the price?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_ea20675", 
+    "character")), answers = list(structure(list(id = "lnr_ans_c3e7cef", 
         option = "Beds", value = "Beds", label = structure("Beds", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_a039b64", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_520f4b8", 
         option = "Sofas & armchairs", value = "Sofas & armchairs", 
         label = structure("Sofas &amp; armchairs", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_4246def", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_5ed40d3", 
         option = "Tables & desk", value = "Tables & desk", label = structure("Tables &amp; desk", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_fd13a36", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_caa9b55", 
         option = "The variability is the same for all three categories", 
         value = "The variability is the same for all three categories", 
         label = structure("The variability is the same for all three categories", html = TRUE, class = c("html", 
@@ -727,7 +726,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "variability-answer", question = "variability"), 
     loading = NULL, random_answer_order = FALSE, allow_retry = FALSE, 
-    seed = 1500104359.30146, options = list()), class = c("learnr_radio", 
+    seed = 1110482292.48289, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
 
@@ -735,17 +734,17 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "variability-hint", 
     question = structure("Which category of furniture has the large IQR for price?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_9d821fb", 
+    "character")), answers = list(structure(list(id = "lnr_ans_50d680a", 
         option = "Beds", value = "Beds", label = structure("Beds", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_a34da93", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_756bb9", 
         option = "Sofas & armchairs", value = "Sofas & armchairs", 
         label = structure("Sofas &amp; armchairs", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_a67cbed", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_fbdf7ce", 
         option = "Tables & desk", value = "Tables & desk", label = structure("Tables &amp; desk", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c06a0f8", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_d2709c4", 
         option = "The IQR is the same for all three categories", 
         value = "The IQR is the same for all three categories", 
         label = structure("The IQR is the same for all three categories", html = TRUE, class = c("html", 
@@ -758,7 +757,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "variability-hint-answer", question = "variability-hint"), 
     loading = NULL, random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 4052001.99811314, options = list()), class = c("learnr_radio", 
+    seed = 1871138171.12868, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
  
@@ -900,13 +899,13 @@ learnr:::store_exercise_cache(structure(list(label = "avg-price", global_setup =
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "sortable_rank", label = "sorting-exercise", 
     question = structure("Sort the steps to bake and serve a cake in the correct order.", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_3cfbacc", 
+    "character")), answers = list(structure(list(id = "lnr_ans_3075d88", 
         option = c("Mix the ingredients.", "Bake the cake.", 
         "Decorate the cake.", "Slice the cake."), value = c("Mix the ingredients.", 
         "Bake the cake.", "Decorate the cake.", "Slice the cake."
         ), label = structure("Mix the ingredients.\nBake the cake.\nDecorate the cake.\nSlice the cake.", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_a5b7ff8", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c6117ce", 
         option = c("Slice the cake.", "Decorate the cake.", "Bake the cake.", 
         "Mix the ingredients."), value = c("Slice the cake.", 
         "Decorate the cake.", "Bake the cake.", "Mix the ingredients."
@@ -922,7 +921,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "sortable_rank", label
         answer = "sorting-exercise-answer", question = "sorting-exercise"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nSort the steps to bake and serve a cake in the correct order.\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = TRUE, allow_retry = TRUE, 
-    seed = 616919412.212725, options = structure(list(), class = "sortable_options")), class = c("sortable_rank", 
+    seed = 1276674576.9055, options = structure(list(), class = "sortable_options")), class = c("sortable_rank", 
 "tutorial_question")), session = session)
 </script>
 
@@ -1074,25 +1073,25 @@ learnr:::store_exercise_cache(structure(list(label = "price-histogram", global_s
 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_checkbox", label = "mc1", question = structure("Which of the following describes the shape of the distribution of Ikea furniture prices? Check all that apply.", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_d403400", 
+"character")), answers = list(structure(list(id = "lnr_ans_e0e7776", 
     option = "Right skewed", value = "Right skewed", label = structure("Right skewed", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_1133005", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_87ea01a", 
     option = "Left skewed", value = "Left skewed", label = structure("Left skewed", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("Skew is on the side of the longer tail", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_65d3d46", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_a1c61a6", 
     option = "Symmetric", value = "Symmetric", label = structure("Symmetric", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("If you were to draw a vertical line down the middle of the x-axis, would the left and right sides of the distribution look like mirror images?", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_d8717e2", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_1fe56eb", 
     option = "Unimodal", value = "Unimodal", label = structure("Unimodal", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_1c9893", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_9c4ff99", 
     option = "Bimodal", value = "Bimodal", label = structure("Bimodal", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("How many prominent peaks do you see?", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_474f052", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_5acb343", 
     option = "Multimodal", value = "Multimodal", label = structure("Multimodal", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = structure("How many prominent peaks do you see?", html = TRUE, class = c("html", 
     "character")), type = "literal"), class = c("tutorial_question_answer", 
@@ -1103,28 +1102,28 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_checkbox", lab
 "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "mc1-answer", question = "mc1"), loading = NULL, 
-    random_answer_order = TRUE, allow_retry = FALSE, seed = 1113851692.98132, 
+    random_answer_order = TRUE, allow_retry = FALSE, seed = 654606298.695175, 
     options = list()), class = c("learnr_checkbox", "tutorial_question"
 )), session = session)
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "mc2", question = structure("Which of the following is false?", html = TRUE, class = c("html", 
-"character")), answers = list(structure(list(id = "lnr_ans_7c83780", 
+"character")), answers = list(structure(list(id = "lnr_ans_80437c6", 
     option = "The mean price is expected to be lower than the median price of Ikea furniture.", 
     value = "The mean price is expected to be lower than the median price of Ikea furniture.", 
     label = structure("The mean price is expected to be lower than the median price of Ikea furniture.", html = TRUE, class = c("html", 
     "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_67dfd7e", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_9952c6f", 
     option = "Less than 25% of the observations have prices greater than $1000.", 
     value = "Less than 25% of the observations have prices greater than $1000.", 
     label = structure("Less than 25% of the observations have prices greater than $1000.", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_687d73b", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_24c1632", 
     option = "The IQR is less than $1000.", value = "The IQR is less than $1000.", 
     label = structure("The IQR is less than $1000.", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-"tutorial_quiz_answer")), structure(list(id = "lnr_ans_144fa32", 
+"tutorial_quiz_answer")), structure(list(id = "lnr_ans_56ac57b", 
     option = "The median price is less than $1000.", value = "The median price is less than $1000.", 
     label = structure("The median price is less than $1000.", html = TRUE, class = c("html", 
     "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
@@ -1135,7 +1134,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
 "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
 "character")), message = NULL, post_message = NULL), ids = list(
     answer = "mc2-answer", question = "mc2"), loading = NULL, 
-    random_answer_order = TRUE, allow_retry = FALSE, seed = 853311503.102646, 
+    random_answer_order = TRUE, allow_retry = FALSE, seed = 183983246.914326, 
     options = list()), class = c("learnr_radio", "tutorial_question"
 )), session = session)
 </script>

@@ -191,7 +191,7 @@ You can write your questions in this section of the .Rmd file.
 
 ## Part 3: Automated feedback
 
-So far students would have to check their solutions to coding exercises by assessing whether the output is reasonable or comparing their code to the solution. The [**gradethis**](https://pkgs.rstudio.com/gradethis/articles/gradethis.html) package has functions for automated feedback on code.
+So far students would have to check their solutions to coding exercises by assessing whether the output is reasonable or comparing their code to the solution. You can use the [**gradethis**](https://pkgs.rstudio.com/gradethis/articles/gradethis.html) package to provide automated feedback on code.
 
 ### Checking code
 
@@ -255,7 +255,7 @@ Provide a "minute paper" in an embedded online form for students to reflect on t
 ```
 ## Part 6: Recording responses with learnrhash
 
-The [**learnrhash**](https://github.com/rundel/learnrhash) package makes it feasible to collect student responses to learnr tutorials. Students submit their responses using a "hash" submitted to an online form.
+Use the [**learnrhash**](https://github.com/rundel/learnrhash) package to collect student responses from learnr tutorials. Students submit their responses using a "hash" submitted to an online form.
 
 Create a histogram of the distribution of Ikea furniture prices and answer the following questions based on the histogram.
 
