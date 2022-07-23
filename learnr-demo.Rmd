@@ -238,7 +238,7 @@ grade_this({
 ::: your-turn
 Add automated feedback to your coding exercise.
 
-<b>Stretch goal:</b> Consider 2 -3 common errors students may make. Write specific feedback for those errors.
+**Stretch goal**: Consider 2 -3 common errors students may make. Write specific feedback for those errors.
 
 You can write your responses in this section or modify the code in Part 2 of `learnr-demo.Rmd`.
 :::
